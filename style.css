@@ -5,7 +5,8 @@ body {
     color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
-    background-image: url('website/image_1944fb.jpg');
+    /* Ajustado al nombre doble */
+    background-image: url('website/image_1944fb.jpg.png');
     background-size: cover;
     background-attachment: fixed;
     background-blend-mode: overlay;
@@ -34,4 +35,3 @@ body {
 
 .gallery-item img:hover { transform: scale(1.03); cursor: pointer; }
 .neon-text { color: var(--accent-neon); }
-.hidden { display: none; }
