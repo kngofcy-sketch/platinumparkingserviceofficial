@@ -9,6 +9,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-blend-mode: overlay;
+    min-height: 100vh;
 }
 
 .config-container {
@@ -22,17 +23,13 @@ body {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 20px;
-    margin-top: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
 }
 
 .gallery-item img {
-    width: 100%; height: 200px; object-fit: cover;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
     border: 1px solid var(--accent-neon);
-    transition: 0.3s;
 }
-
-.gallery-item img:hover { transform: scale(1.03); cursor: pointer; }
-.neon-text { color: var(--accent-neon); }
-.section-title { text-align: center; font-size: 2.5rem; }
