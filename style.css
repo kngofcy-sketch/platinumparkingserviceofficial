@@ -144,6 +144,7 @@ select option { background-color: #000; }
     display: flex; justify-content: center; align-items: center;
     backdrop-filter: blur(5px);
 }
+.modal.hidden { display: none !important; }
 .modal-content {
     background-color: var(--bg-sec); border: 1px solid var(--accent);
     padding: 3rem; border-radius: var(--border-radius); max-width: 800px;
