@@ -13,8 +13,10 @@
     <header class="navbar">
         <div class="logo">APS PLATINUM</div>
         <nav class="nav-links">
-            <a href="#zonas" class="nav-link">Zonas de Operación</a>
-            <a href="#cotizar" class="btn-outline">Solicitar VIP</a>
+            <a href="#nosotros" class="nav-link">Nosotros</a>
+            <a href="#servicios" class="nav-link">Servicios</a>
+            <a href="#zonas" class="nav-link">Zonas VIP</a>
+            <a href="#contacto" class="btn-outline">Contacto</a>
         </nav>
     </header>
 
@@ -23,7 +25,36 @@
         <div class="hero-content">
             <h1>Dueños de la Noche en <span class="neon-text">Miami</span></h1>
             <p>Logística de valet parking de alto octanaje para la zona caliente de Wynwood y los venues más exclusivos de la ciudad.</p>
-            <a href="#cotizar" class="btn-primary large-btn pulse-glow">Agendar Operación Logística</a>
+            <a href="#contacto" class="btn-primary large-btn pulse-glow">Agendar Operación Logística</a>
+        </div>
+    </section>
+
+    <section id="nosotros" class="about-section">
+        <div class="container text-center config-container">
+            <h2 class="section-title">Servicio <span class="neon-text">Excepcional</span></h2>
+            <p class="text-muted" style="font-size: 1.2rem;">Desde el año 2000, Platinum Parking Service ha ofrecido servicios de calidad con la atención profesional que nuestros clientes merecen. Elevamos el estándar de recepción en cada establecimiento.</p>
+        </div>
+    </section>
+
+    <section id="servicios" class="services-section">
+        <div class="container text-center">
+            <h2 class="section-title">Nuestros Servicios</h2>
+            <p class="mb-2 text-muted config-container" style="margin: 0 auto 3rem auto;">Puede contar con los servicios de Platinum Parking Service para cubrir e incluso superar sus necesidades. Aprenda más sobre lo que ofrecemos a continuación.</p>
+            
+            <div class="venue-grid">
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1549615219-c09a15ab2dd9?q=80&w=600&auto=format&fit=crop" alt="Servicio 1" class="service-img">
+                    <h3>Operación B2B</h3>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=600&auto=format&fit=crop" alt="Servicio 2" class="service-img">
+                    <h3>Eventos Privados</h3>
+                </div>
+                <div class="service-card">
+                    <img src="https://images.unsplash.com/photo-1600642845347-194165af1ec4?q=80&w=600&auto=format&fit=crop" alt="Servicio 3" class="service-img">
+                    <h3>Gestión de Aforo</h3>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -34,47 +65,58 @@
             <div class="venue-grid">
                 <div class="venue-tag">Tucandela</div>
                 <div class="venue-tag">Electric</div>
-                <div class="venue-tag">Canta Corazon</div>
+                <div class="venue-tag">Canta Corazones</div>
                 <div class="venue-tag">Manta</div>
                 <div class="venue-tag">Hiyakawa</div>
             </div>
         </div>
     </section>
 
-    <section id="cotizar" class="quote-section">
+    <section id="contacto" class="quote-section">
         <div class="container config-container">
-            <h2 class="section-title">Asegura tu Aforo</h2>
-            <p class="text-center mb-2 text-muted">Conéctate directo con nuestro Flight Deck. Cotiza la logística para tu local o evento privado.</p>
+            <h2 class="section-title text-center">Póngase en Contacto</h2>
+            
+            <div class="contact-info text-center mb-2">
+                <p class="text-muted">Miami, FL</p>
+                <p class="neon-text">platinumparkingservice@gmail.com</p>
+                <p class="neon-text">786-253-3230</p>
+            </div>
             
             <div class="card form-card">
                 <form id="quote-form">
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="nombre">Venue / Razón Social *</label>
-                            <input type="text" id="nombre" name="nombre" required>
+                            <label>Nombre</label>
+                            <input type="text" name="nombre" required>
                         </div>
                         <div class="form-group">
-                            <label for="email">Correo Corporativo *</label>
-                            <input type="email" id="email" name="email" required>
+                            <label>Dirección</label>
+                            <input type="text" name="direccion" required>
                         </div>
                     </div>
                     
                     <div class="form-row">
                         <div class="form-group">
-                            <label for="tipo">Nivel de Despliegue *</label>
-                            <select id="tipo" name="tipo" required>
-                                <option value="" disabled selected>Selecciona el servicio...</option>
-                                <option value="Discoteca/Club">Discoteca / Club (Fijo)</option>
-                                <option value="Evento Privado VIP">Evento Privado VIP</option>
-                            </select>
+                            <label>Email</label>
+                            <input type="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="capacidad">Volumen (Vehículos) *</label>
-                            <input type="number" id="capacidad" name="capacidad" min="10" required>
+                            <label>Teléfono</label>
+                            <input type="tel" name="telefono" required>
                         </div>
                     </div>
 
-                    <button type="submit" class="btn-primary full-width" id="submit-btn">Enviar al Centro de Mando</button>
+                    <div class="form-group">
+                        <label>Asunto</label>
+                        <input type="text" name="asunto" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Escribe tu mensaje aquí...</label>
+                        <textarea name="mensaje" rows="4" required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary full-width" id="submit-btn">Enviar Mensaje</button>
                     <div id="form-feedback" class="feedback-msg hidden"></div>
                 </form>
             </div>
@@ -83,10 +125,27 @@
 
     <footer class="footer">
         <div class="container text-center">
-            <div class="logo">APS PLATINUM PARKING SERVICE LLC</div>
+            <div class="logo" style="font-size: 1.2rem;">APS PLATINUM PARKING SERVICE LLC</div>
+            <p class="text-muted" style="margin: 1rem 0;">© 2026 Platinum Parking Service. Todos los derechos reservados.</p>
+            <button onclick="togglePrivacyModal()" class="btn-link">Política de Privacidad</button>
             <p class="branding-footer">POWERED BY DHSKNG STUDIO // KINGDOMCONNECT VIP</p>
         </div>
     </footer>
+
+    <div id="privacy-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn" onclick="togglePrivacyModal()">&times;</span>
+            <h2 class="neon-text" style="margin-bottom: 1.5rem;">POLÍTICA DE PRIVACIDAD</h2>
+            <p>La ley exige contar con políticas de privacidad si recopilas datos de los visitantes a tu sitio web. Personaliza los detalles de tu política de acuerdo con las leyes locales y explica el proceso que estás siguiendo para la protección de los datos de tus usuarios.</p>
+            <p>Proteger la privacidad y la información personal de los visitantes y usuarios de nuestro sitio web es lo más importante.</p>
+            <h3 style="margin-top: 1.5rem; font-size: 1.1rem;">Recolección, uso y cesión de datos</h3>
+            <p>Somos los únicos propietarios de la información que se recopile en este sitio web. Únicamente recopilamos datos que se han compartido de forma voluntaria por parte de los visitantes a este sitio web, por lo que la información no será vendida a ningún tercero sin previa autorización expresa. A menos de que usted indique lo contrario, podemos contactarle para informarle sobre actualizaciones y cambios que platinum parking service haga a esta política de privacidad.</p>
+            <h3 style="margin-top: 1.5rem; font-size: 1.1rem;">Control sobre los datos</h3>
+            <p>Usted puede contactarnos en cualquier momento para saber qué tipo de información poseemos de usted, para cambiarla, actualizarla o corregirla o para expresar cualquier inquietud respecto al uso que hacemos de sus datos.</p>
+            <h3 style="margin-top: 1.5rem; font-size: 1.1rem;">Seguridad en la información</h3>
+            <p>Se tomarán las acciones necesarias para proteger su información. La información sensible siempre será encriptada, almacenada en servidores seguros y transmitida por medios confiables.</p>
+        </div>
+    </div>
 
     <script src="main.js"></script>
 </body>
