@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APS Platinum Parking | VIP Valet en Miami & Wynwood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Urbanist:wght@700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">APS PLATINUM</div>
+        <nav class="nav-links">
+            <a href="#zonas" class="nav-link">Zonas de Operación</a>
+            <a href="#cotizar" class="btn-outline">Solicitar VIP</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Dueños de la Noche en <span class="neon-text">Miami</span></h1>
+            <p>Logística de valet parking de alto octanaje para la zona caliente de Wynwood y los venues más exclusivos de la ciudad.</p>
+            <a href="#cotizar" class="btn-primary large-btn pulse-glow">Agendar Operación Logística</a>
+        </div>
+    </section>
+
+    <section id="zonas" class="hot-zones">
+        <div class="container text-center">
+            <h2 class="section-title">El Ecosistema VIP</h2>
+            <p class="mb-2 text-muted">Donde está la acción, está nuestra infraestructura. Operando el aforo de las discotecas más pesadas.</p>
+            <div class="venue-grid">
+                <div class="venue-tag">Tucandela</div>
+                <div class="venue-tag">Electric</div>
+                <div class="venue-tag">23</div>
+                <div class="venue-tag">Canta Corazones</div>
+                <div class="venue-tag">La Tropical</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cotizar" class="quote-section">
+        <div class="container config-container">
+            <h2 class="section-title">Asegura tu Aforo</h2>
+            <p class="text-center mb-2 text-muted">Conéctate directo con nuestro Flight Deck. Cotiza la logística para tu local o evento privado.</p>
+            
+            <div class="card form-card">
+                <form id="quote-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Venue / Razón Social *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Correo Corporativo *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="tipo">Nivel de Despliegue *</label>
+                            <select id="tipo" name="tipo" required>
+                                <option value="" disabled selected>Selecciona el servicio...</option>
+                                <option value="Discoteca/Club">Discoteca / Club (Fijo)</option>
+                                <option value="Evento Privado VIP">Evento Privado VIP</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="capacidad">Volumen (Vehículos) *</label>
+                            <input type="number" id="capacidad" name="capacidad" min="10" required>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn-primary full-width" id="submit-btn">Enviar al Centro de Mando</button>
+                    <div id="form-feedback" class="feedback-msg hidden"></div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <div class="logo">APS PLATINUM PARKING SERVICE LLC</div>
+            <p class="branding-footer">POWERED BY DHSKNG STUDIO // KINGDOMCONNECT VIP</p>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
