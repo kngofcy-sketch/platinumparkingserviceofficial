@@ -5,7 +5,7 @@ body {
     color: #ffffff;
     font-family: Arial, sans-serif;
     margin: 0;
-    background-image: url('image_1944fb.jpg.png');
+    background-image: url('image_1944fb.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-blend-mode: overlay;
@@ -24,7 +24,7 @@ body {
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
+    gap: 20px;
 }
 
 .gallery-item img {
@@ -33,3 +33,6 @@ body {
     object-fit: cover;
     border: 1px solid var(--accent-neon);
 }
+
+.neon-text { color: var(--accent-neon); }
+.section-title { text-align: center; }
