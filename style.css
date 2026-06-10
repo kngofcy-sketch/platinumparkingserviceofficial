@@ -1,5 +1,7 @@
 :root { --bg-main: #0a0a0c; --accent-neon: #00f2ff; }
 
+* { box-sizing: border-box; }
+
 body {
     background-color: var(--bg-main);
     color: #ffffff;
@@ -12,12 +14,22 @@ body {
     min-height: 100vh;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    background: rgba(0,0,0,0.5);
+}
+
+nav a { color: var(--accent-neon); text-decoration: none; font-weight: bold; }
+
 .config-container {
     background: rgba(15, 15, 20, 0.85);
     border: 1px solid rgba(0, 242, 255, 0.3);
     padding: 2rem;
     border-radius: 10px;
-    margin: 50px auto;
+    margin: 20px auto;
     max-width: 1000px;
 }
 
@@ -32,7 +44,7 @@ body {
     height: 200px;
     object-fit: cover;
     border: 1px solid var(--accent-neon);
+    transition: 0.3s;
 }
 
-.neon-text { color: var(--accent-neon); }
-.section-title { text-align: center; }
+.hidden { display: none !important; }
