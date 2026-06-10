@@ -3,10 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>APS Platinum | Hot Zones</title>
+    <title>APS Platinum | Logística de Valet</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <nav>
+        <a href="#about">About Us</a>
+        <a href="#hiring">Hiring</a>
+        <a href="#contact">Contacto</a>
+    </nav>
 
     <section id="galeria" class="container config-container">
         <h2 class="section-title">APS Platinum <span class="neon-text">Hot Zones</span></h2>
@@ -20,6 +26,20 @@
             <div class="gallery-item"><img src="image_195000.jpg" alt="McLaren"></div>
             <div class="gallery-item"><img src="image_194c86.jpg" alt="Flota"></div>
         </div>
+    </section>
+
+    <section id="hiring" class="container config-container">
+        <h2>Join Our Valet Hiring Process</h2>
+        <p>Forma parte del equipo de élite en Miami.</p>
+    </section>
+
+    <section id="contact" class="container config-container">
+        <form id="quote-form">
+            <h3>Contacto</h3>
+            <input type="text" name="nombre" placeholder="Nombre" required>
+            <button type="submit" id="submit-btn">Enviar</button>
+        </form>
+        <div id="form-feedback" class="hidden"></div>
     </section>
 
     <script src="main.js"></script>
