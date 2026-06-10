@@ -1,33 +1,27 @@
 document.addEventListener('DOMContentLoaded', () => {
-    console.log("APS Platinum: Sistema cargado correctamente.");
+    console.log("Sistema APS Platinum cargado.");
 
-    // Manejo del formulario de forma segura
+    // Manejo del formulario de contacto
     const form = document.getElementById('quote-form');
     if (form) {
-        form.addEventListener('submit', async (e) => {
+        form.addEventListener('submit', (e) => {
             e.preventDefault();
             const feedback = document.getElementById('form-feedback');
             if (feedback) {
-                feedback.textContent = 'Procesando...';
+                feedback.textContent = '¡Enviado con éxito!';
                 feedback.classList.remove('hidden');
-                
-                // Simulación de envío
-                await new Promise(resolve => setTimeout(resolve, 800));
-                
-                feedback.textContent = '¡Recibido! APS Platinum se pondrá en contacto.';
             }
         });
     }
 
-    // Aseguramos que cualquier botón de cierre funcione si existe
-    const closeButtons = document.querySelectorAll('.close-btn');
-    closeButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const modal = button.closest('.modal');
+    // Sistema universal para cerrar ventanas/modales
+    document.addEventListener('click', (e) => {
+        // Busca si el clic es en un botón de cerrar
+        if (e.target.matches('.close-btn')) {
+            const modal = e.target.closest('.config-container');
             if (modal) {
                 modal.classList.add('hidden');
-                document.body.style.overflow = 'auto';
             }
-        });
+        }
     });
 });
